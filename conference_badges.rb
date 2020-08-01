@@ -18,6 +18,8 @@ end
 message
 end
 
+  speakers.each_with_index.map {|sp, idx| "Hello, #{sp}! You'll be assigned to room #{idx + 1}!"} 
+
 def printer(speakers)
   batch_badge_creator(speakers).each do |badge|
     puts badge
